@@ -4,7 +4,7 @@ require 'time'
 require 'dotenv/load'
 
 CLIPIA_KEY = ENV['clipia_key']
-BASE_URL = "http://localhost:3000"
+BASE_URL = "https://clipia.ca"
 
 bot = Discordrb::Bot.new(token: ENV['token'])
 
