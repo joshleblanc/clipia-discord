@@ -21,7 +21,7 @@ bot.message do |e|
         url: "#{BASE_URL}#{json['url']}", 
         timestamp: Time.parse(json['created_at']),
         description: json['description'],
-        thumbnail: Discordrb::Webhooks::EmbedThumbnail.new(url: json['thumbnail_url']),
+        image: Discordrb::Webhooks::EmbedImage.new(url: json['thumbnail_url']),
         author: Discordrb::Webhooks::EmbedAuthor.new(name: json['author']),
         footer: Discordrb::Webhooks::EmbedFooter.new(text: "#{json['views']} views")
     )
